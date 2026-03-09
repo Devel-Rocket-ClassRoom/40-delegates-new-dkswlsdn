@@ -9,7 +9,9 @@
 
 ## 1. 대리자를 통한 메서드 호출
 
-`SayDelegate` 대리자(반환값 없음, 매개변수 없음)를 선언하세요. "Hello Delegate"를 출력하는 `Hello` 정적 메서드를 만들고, 대리자 인스턴스를 생성하여 `()`와 `Invoke()` 두 가지 방법으로 호출하세요.
+`SayDelegate` 대리자(반환값 없음, 매개변수 없음)를 선언하세요.
+"Hello Delegate"를 출력하는 `Hello` 정적 메서드를 만들고,
+대리자 인스턴스를 생성하여 `()`와 `Invoke()` 두 가지 방법으로 호출하세요.
 
 **실행 결과**
 
@@ -22,7 +24,8 @@ Hello Delegate
 
 ## 2. 대리자 인스턴스 생성 방법
 
-"안녕하세요."를 출력하는 `Hi` 정적 메서드를 만들고, `SayDelegate` 대리자에 메서드 이름으로 할당하는 방법과 `new SayDelegate(Hi)` 방법을 각각 사용하여 호출하세요.
+"안녕하세요."를 출력하는 `Hi` 정적 메서드를 만들고, `SayDelegate` 대리자에 메서드 이름으로
+할당하는 방법과 `new SayDelegate(Hi)` 방법을 각각 사용하여 호출하세요.
 
 **실행 결과**
 
@@ -35,7 +38,9 @@ Hello Delegate
 
 ## 3. 매개변수와 반환값이 있는 대리자
 
-`GetAreaDelegate` 대리자(int를 받아 double을 반환)를 선언하세요. 원의 넓이를 계산하는 `GetArea` 정적 메서드(3.14 * r * r)를 만들고, `Invoke(10)`과 `pointer(10)` 두 가지 방법으로 호출하여 결과를 출력하세요.
+`GetAreaDelegate` 대리자(int를 받아 double을 반환)를 선언하세요.
+원의 넓이를 계산하는 `GetArea` 정적 메서드(3.14 * r * r)를 만들고,
+`Invoke(10)`과 `pointer(10)` 두 가지 방법으로 호출하여 결과를 출력하세요.
 
 **실행 결과**
 
@@ -48,7 +53,8 @@ Hello Delegate
 
 ## 4. 강력한 형식의 대리자
 
-`MathOperation` 대리자(double 두 개를 받아 double을 반환)를 선언하세요. `Math.Pow` 메서드를 대리자에 할당하고, `pow(2, 10)`을 호출하여 결과를 출력하세요.
+`MathOperation` 대리자(double 두 개를 받아 double을 반환)를 선언하세요.
+`Math.Pow` 메서드를 대리자에 할당하고, `pow(2, 10)`을 호출하여 결과를 출력하세요.
 
 **실행 결과**
 
@@ -60,7 +66,9 @@ Hello Delegate
 
 ## 5. 정적 메서드 참조
 
-`Transformer` 대리자(int를 받아 int를 반환)를 선언하세요. `Calculator` 클래스에 `public static int Square(int x)` 메서드를 만들고, 대리자에 `Calculator.Square`를 할당하여 `t(5)`를 출력하세요.
+`Transformer` 대리자(int를 받아 int를 반환)를 선언하세요. 
+`Calculator` 클래스에 `public static int Square(int x)` 메서드를 만들고, 
+대리자에 `Calculator.Square`를 할당하여 `t(5)`를 출력하세요.
 
 **실행 결과**
 
@@ -72,7 +80,10 @@ Hello Delegate
 
 ## 6. 멀티캐스트 대리자: 진행률 보고
 
-`ProgressReporter` 대리자(int를 받고 반환값 없음)를 선언하세요. "진행률: {percent}%"를 출력하는 `WriteToConsole`과 "[파일 기록] {percent}%"를 출력하는 `WriteToFile` 정적 메서드를 만드세요. 두 메서드를 `+=`로 연결하고, 0%부터 100%까지 25% 단위로 보고하세요.
+`ProgressReporter` 대리자(int를 받고 반환값 없음)를 선언하세요. 
+"진행률: {percent}%"를 출력하는 `WriteToConsole`과 "[파일 기록] {percent}%"를 출력하는
+`WriteToFile` 정적 메서드를 만드세요. 두 메서드를 `+=`로 연결하고, 
+0%부터 100%까지 25% 단위로 보고하세요.
 
 **실행 결과**
 
@@ -97,7 +108,10 @@ Hello Delegate
 
 ## 7. 대리자를 매개변수로 전달
 
-`Runner` 대리자(반환값 없음, 매개변수 없음)를 선언하세요. "직진"을 출력하는 `Go`와 "후진"을 출력하는 `Back` 정적 메서드를 만드세요. `RunnerCall(Runner runner)` 정적 메서드가 "=== 실행 시작 ===" 출력, runner 호출, "=== 실행 종료 ===" 출력을 수행하도록 구현하세요. `Go`와 `Back`을 각각 전달하여 호출하세요.
+`Runner` 대리자(반환값 없음, 매개변수 없음)를 선언하세요.
+"직진"을 출력하는 `Go`와 "후진"을 출력하는 `Back` 정적 메서드를 만드세요. 
+`RunnerCall(Runner runner)` 정적 메서드가 "=== 실행 시작 ===" 출력, runner 호출, 
+"=== 실행 종료 ===" 출력을 수행하도록 구현하세요. `Go`와 `Back`을 각각 전달하여 호출하세요.
 
 **실행 결과**
 
@@ -115,7 +129,9 @@ Hello Delegate
 
 ## 8. Action 대리자
 
-`Action`(매개변수 없음), `Action<string>`, `Action<string, int>`을 각각 사용하여 람다식으로 구현하세요. "안녕하세요!" 출력, 전달받은 메시지 출력, 메시지를 지정된 횟수만큼 반복 출력하세요.
+`Action`(매개변수 없음), `Action<string>`, `Action<string, int>`을 각각 사용하여 
+람다식으로 구현하세요. "안녕하세요!" 출력, 전달받은 메시지 출력,
+메시지를 지정된 횟수만큼 반복 출력하세요.
 
 **실행 결과**
 
@@ -131,7 +147,9 @@ Hello, Action!
 
 ## 9. Func 대리자
 
-`Func<int>`, `Func<int, int>`, `Func<int, int, int>`, `Func<int, int, string>`을 각각 람다식으로 구현하세요. 42 반환, 제곱 반환, 두 수의 합 반환, 두 수의 합을 문자열로 반환하는 동작을 테스트하세요.
+`Func<int>`, `Func<int, int>`, `Func<int, int, int>`, `Func<int, int, string>`을
+각각 람다식으로 구현하세요. 42 반환, 제곱 반환, 두 수의 합 반환,
+두 수의 합을 문자열로 반환하는 동작을 테스트하세요.
 
 **실행 결과**
 
@@ -146,7 +164,8 @@ Hello, Action!
 
 ## 10. Predicate 대리자
 
-`Predicate<int>`를 사용하여 짝수 검사(`isEven`)와 양수 검사(`isPositive`)를 람다식으로 구현하세요. 4, 7, 5, -3을 각각 테스트하여 결과를 출력하세요.
+`Predicate<int>`를 사용하여 짝수 검사(`isEven`)와 양수 검사(`isPositive`)를 
+람다식으로 구현하세요. 4, 7, 5, -3을 각각 테스트하여 결과를 출력하세요.
 
 **실행 결과**
 
@@ -161,7 +180,8 @@ False
 
 ## 11. 익명 메서드
 
-`SayDelegate` 대리자에 `delegate()` 키워드를 사용하여 "반갑습니다."를 출력하는 익명 메서드를 할당하고 호출하세요.
+`SayDelegate` 대리자에 `delegate()` 키워드를 사용하여 
+"반갑습니다."를 출력하는 익명 메서드를 할당하고 호출하세요.
 
 **실행 결과**
 

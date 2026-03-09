@@ -9,7 +9,10 @@
 
 ## 1. 인스턴스 메서드 참조
 
-`Transformer` 대리자(int를 받아 int를 반환)를 선언하세요. `Calculator` 클래스에 `public int multiplier = 3` 필드와 `public int Multiply(int x)` 인스턴스 메서드를 만드세요. `Calculator` 인스턴스를 생성하고 `calc.Multiply`를 대리자에 할당하여 `t(5)`를 출력하세요.
+`Transformer` 대리자(int를 받아 int를 반환)를 선언하세요.
+`Calculator` 클래스에 `public int multiplier = 3` 필드와 `public int Multiply(int x)`
+인스턴스 메서드를 만드세요. `Calculator` 인스턴스를 생성하고 `calc.Multiply`를 대리자에 
+할당하여 `t(5)`를 출력하세요.
 
 **실행 결과**
 
@@ -21,7 +24,9 @@
 
 ## 2. 멀티캐스트 대리자: 추가와 제거
 
-`CarDriver` 대리자(반환값 없음, 매개변수 없음)를 선언하세요. "직진", "좌회전", "우회전"을 출력하는 정적 메서드 3개를 만드세요. `+=`로 3개를 연결하여 호출한 후, `GoLeft`를 `-=`로 제거하고 다시 호출하세요.
+`CarDriver` 대리자(반환값 없음, 매개변수 없음)를 선언하세요. "직진", "좌회전", "우회전"을
+출력하는 정적 메서드 3개를 만드세요. `+=`로 3개를 연결하여 호출한 후, `GoLeft`를 `-=`로
+제거하고 다시 호출하세요.
 
 **실행 결과**
 
@@ -38,7 +43,10 @@
 
 ## 3. 배열 변환 예제
 
-`Transformer` 대리자를 사용하여 배열 변환 함수를 구현하세요. `Transform(int[] values, Transformer t)` 정적 메서드가 각 요소에 대리자를 적용합니다. `{1, 2, 3, 4, 5}` 배열에 `Square`(제곱)를 적용하여 출력한 후, 다시 초기화하여 `Cube`(세제곱)를 적용하여 출력하세요.
+`Transformer` 대리자를 사용하여 배열 변환 함수를 구현하세요. 
+`Transform(int[] values, Transformer t)` 정적 메서드가 각 요소에 대리자를 적용합니다.
+`{1, 2, 3, 4, 5}` 배열에 `Square`(제곱)를 적용하여 출력한 후, 다시 초기화하여
+`Cube`(세제곱)를 적용하여 출력하세요.
 
 **실행 결과**
 
